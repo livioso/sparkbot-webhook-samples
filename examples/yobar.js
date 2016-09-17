@@ -44,13 +44,13 @@ bot.onCommand("add", function (command) {
 
 bot.onCommand("remove", function (command) {
 
-  var args = command.args[];
+  var index = command.args[0];
 
   spark.messageSendRoom(command.message.roomId, {
       markdown: "_heard you ! marking yoghurt as done"
   });
 
-  todos[args] = undefined;
+  todos[index] = undefined;
 });
 
 
