@@ -26,7 +26,7 @@ COPY . /home/node/samples
 RUN chown -R node:node /home/node/samples
 USER node
 ENV HOME /home/node
+# ENV SPARK_TOKEN MTZiZDUwMTEtYTRkMy00ZmQ1LWJjZjUtM2E5Nzg2OGQ3MjFlODViYWIwNTctNWRl
+# ENV DEBUG sparkbot*,samples*
 
-# Run default sample
-CMD /usr/local/bin/node $SCRIPT
-
+CMD node examples/yobar.js
