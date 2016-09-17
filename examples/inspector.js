@@ -17,7 +17,7 @@ var bot = new SparkBot();
 //bot.interpreter.ignoreSelf = true; 
 
 var SparkClient = require("node-sparky");
-var spark = new SparkClient({ token: process.env.SPARK_TOKEN });
+var spark = new SparkClient({ token: 'MTZiZDUwMTEtYTRkMy00ZmQ1LWJjZjUtM2E5Nzg2OGQ3MjFlODViYWIwNTctNWRl'  });
 
 
 bot.onCommand("about", function (command) {
